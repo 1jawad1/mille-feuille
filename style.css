@@ -1,0 +1,248 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: url("assets/img/mille\ feuille\ bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: sans-serif;
+    
+}
+
+.all{
+    margin: 0px;
+    width: min(90vw, 160vh);
+    aspect-ratio: 2/1;
+    backdrop-filter: blur(min(3vh, 1.7vw));
+    background-color: rgba(0, 0, 0, 0.425);
+    border-radius: min(4vh, 4vw);
+    border: 1px solid rgba(255, 255, 255, 0.482);
+    display: flex;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 7px 6px 20px 1px black;
+    padding: min(2vh,2vw);
+}
+
+.main{
+    display: block;
+    width: 80%;
+    height: 80%;
+    overflow: hidden;
+    color: white;
+}
+
+.slides{
+    width: 600%;
+    height: 100%;
+    display: grid;
+    grid-template: 100% / repeat(6, 1fr);
+    transition: all 1s ease-in-out;
+}
+
+.slide{
+    display: flex;
+    max-height: 100%;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.img{
+    height: min(28vw,56vh);
+}
+
+
+.s1, .s2, .s5, .s6{
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    gap: min(2vh,2vw);
+}
+
+.s3, .s4{
+    margin-top: min(5vh,5vw);
+    flex-direction: column;
+    justify-content: space-around;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 40%;
+}
+
+.nav{
+    overflow: visible;
+    width: 80%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: min(3vh,3vw);
+    gap: min(2vh, 2vw);
+    font-size: min(2.5vh, 1.5vw);
+}
+.photo{
+    height: 100%;
+    width: 20%;
+}
+.photo img{
+    height: 100%;
+    aspect-ratio: 1/1;
+    border-radius: min(6vw, 6vh);
+    border: min(0.1vh, 0.1vw) solid white;
+    overflow: hidden;
+}
+
+.pages{
+    color: white;
+    width: 80%;
+    height: 100%;
+    display: grid;
+    grid-template: 1fr/ repeat(6, 1fr);
+    gap: min(3vw, 3vh);
+}
+
+
+.page{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    border-radius: min(3vw, 3vh);
+    cursor: pointer;
+}
+
+::selection {
+    color: #ffffff; 
+    background-color: #85664caf;
+  }
+
+.title{
+    border-left: 2px solid rgb(218, 70, 70);
+    padding-left: min(1vh, 1vw);
+    margin: 0px;
+    font-size: min(4.5vh, 2.5vw);
+}
+
+.ingredients{
+    display: grid;
+    grid-template: repeat(3, 1fr) 10%/repeat(3, 1fr) ;
+    height: 100%;
+    max-width: 90%;
+    margin-left: min(10vh,10vw);
+}
+
+.ingredient{
+    display: flex;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    font-size: min(2.5vh, 1.5vw);
+    text-wrap: nowrap;
+    gap: min(1vh,1vw);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.251);
+}
+.ingImg{
+    width: min(7vw, 10vh);
+}
+.ingImgM{
+    width: min(10vw, 15vh);
+}
+.name{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.img_perso{
+    height: 62vh;
+}
+
+.matériels{
+    display: grid;
+    grid-template: repeat(2, 1fr) 10%/repeat(3, 1fr) ;
+    height: 100%;
+    max-width: 100%;
+}
+
+.étapes{
+    display: flex;
+    height: 100%;
+    text-overflow: hidden;
+    gap: min(1vh,1vw);
+    width: 70%;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+.texte, .description{
+font-size: min(2.5vh, 2.5vw)
+}
+
+.play{
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.video{
+height: 80%;
+border: 1px solid white;
+border-radius: min(2vh, 2vw);
+box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.538);
+}
+
+.info{
+    display: grid;
+    grid-template: 1fr 90% /1fr;
+    justify-items: space-around;
+    align-items: center;
+    width: 35%;
+    height: 80%;
+
+}
+
+.buts{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.but{
+    width: min(15vh, 10vw);
+    height: min(7vh, 3vw);
+    border: 1px solid rgba(236, 222, 171, 0.45);
+    background-color: rgba(104, 77, 48, 0.67);
+    border-radius: min(1vh, 1vw);
+    color: rgba(236, 222, 171, 0.45);
+    transition: all 0.1s;
+}
+
+.but:hover{
+    color: rgba(84, 53, 20, 0.85);
+    border: 1px solid rgba(84, 53, 20, 0.85);
+    background-color: rgba(236, 222, 171, 0.45);
+    transform: scale(1.05);
+}
+
+.but:active{
+    background-color: white;
+}
+
+
+.variante{
+    width: 70%;
+}
