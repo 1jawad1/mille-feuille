@@ -8,6 +8,7 @@ pagesNumber = {
     "Material" : 3,
     "Etapas" : 4,
     "Fin" : 5
+
 }
 
 // séléction de la page => changement de la couleur du bouton + scroll
