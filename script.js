@@ -2,12 +2,12 @@ let pages = document.querySelectorAll(".page")
 let slides = document.querySelector(".slides")
 
 pagesNumber = {
-    "introduction": 0,
-    "histoire": 1,
-    "ingrédients" : 2,
-    "matériels" : 3,
-    "étapes" : 4,
-    "variante" : 5
+    "Introduction": 0,
+    "Historia": 1,
+    "Ingredientes" : 2,
+    "Material" : 3,
+    "Etapas" : 4,
+    "Fin" : 5
 }
 
 // séléction de la page => changement de la couleur du bouton + scroll

@@ -58,18 +58,25 @@ body{
 }
 
 
-.s1, .s2, .s5, .s6{
+.s1, .s5, .s6{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
     gap: min(2vh,2vw);
 }
 
-.s3, .s4{
+.s3,  .s4{
     margin-top: min(5vh,5vw);
     flex-direction: column;
     justify-content: space-around;
 }
+
+.s2{
+    margin-top: min(5vh,5vw);
+    flex-direction: column;
+    justify-content: center;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -149,6 +156,7 @@ body{
     text-wrap: nowrap;
     gap: min(1vh,1vw);
     border-bottom: 1px solid rgba(255, 255, 255, 0.251);
+    justify-content: space-evenly
 }
 .ingImg{
     width: min(7vw, 10vh);
@@ -245,4 +253,7 @@ box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.538);
 
 .variante{
     width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
